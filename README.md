@@ -17,8 +17,9 @@ Following are step-by-step points for connecting UR5 robot with ROS.
 1. Pull this repository to your workspace. 
 
 2. Now, you should install required dependencies. Required packages for running the robot are following:
- 
- * ur_modern_driver - https://github.com/ThomasTimm/ur_modern_driver
+
+ * ur_modern_driver (ROS Indigo) - https://github.com/ThomasTimm/ur_modern_driver
+ * ur_modern_driver (ROS Kinetic) - fork from the same driver but with temporary patch for kinetic (full refactoring for kinetic is in progress at time of writing) - https://github.com/willcbaker/ur_modern_driver/tree/kinetic-devel 
  * universal_robot - https://github.com/ros-industrial/universal_robot.git
 
 To use these packages, you should pull them to your workspace and catkin_make the project.
