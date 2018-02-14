@@ -27,7 +27,7 @@ Following are step-by-step points for connecting UR5 robot with ROS.
 
    2.2. Download dependencies with rodsep
    ```
-   [..]/your_workspace$ rosdep intsall --from-paths --ignore-src .
+   [..]/your_workspace$ rosdep install --from-paths --ignore-src .
    ```
 
    2.3. make the project
