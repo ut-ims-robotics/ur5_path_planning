@@ -23,7 +23,17 @@ Following are step-by-step points for connecting UR5 robot with ROS.
     * ROS Kinetic - fork from the same driver but with temporary patch for kinetic (full refactoring for kinetic is in progress at time of writing) - https://github.com/willcbaker/ur_modern_driver/tree/kinetic-devel 
  * universal_robot - https://github.com/ros-industrial/universal_robot.git
 
-To use these packages, you should pull them to your workspace and catkin_make the project.
+   2.1. You should clone the repositories to your workspace. Make sure you are on right ros distro branch, if corresponding branch is provided. 
+
+   2.2. Download dependencies with rodsep
+   ```
+   [..]/your_workspace$ rosdep install --from-paths --ignore-src .
+   ```
+
+   2.3. make the project
+   ```
+   [..]/your_workspace$ catkin_make
+   ```
 
 3. Start the ur_modern_driver. ROBOT_IP is reference to the IP you configured previously in "Hardware setup" section.
 
